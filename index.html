@@ -15,14 +15,15 @@
                 <label for="background"><input id="background" type="radio" value="background" name="element">background</label>
                 <label for="text"><input id="text" type="radio" value="text" name="element">text</label>
             </fieldset>
+            <button onclick="changeColor()">confirm</button>
             <label for="inserttext">
                 Plan? 
                 <textarea id="inserttext" cols="20" rows="3" placeholder="start typing..." name="comment"></textarea>
             </label>
-            <button onclick="changeColor()">confirm</button>
             <div class="todolist">
                 <p>To do:</p>
             </div>
+            <button onclick="addTask()">add</button>
         </form>
         <script src="onclick.js"></script>
     </body>

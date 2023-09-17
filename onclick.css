@@ -36,5 +36,11 @@ textarea[id="inserttext"] {
     align-items: center;
     gap: 10px;
     margin: 0 auto;
-    width: 100px;
+    width: 200px;
+}
+
+.todolist div p{
+    width: 70%;
+    word-wrap: break-word;
+    text-align: left;
 }

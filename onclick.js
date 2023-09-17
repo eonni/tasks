@@ -6,6 +6,10 @@ function changeColor() {
     const color = document.querySelector('input[name="color"]').value;
     const changebackground = document.querySelector('input[value="background"]');
     changebackground.checked ? body.style.backgroundColor = color : body.style.color = color;
+    
+}
+
+function addTask() {
     const containertag = document.createElement("div");
     const tag1 = document.createElement("p");
     const tag2 = document.createElement("input");
@@ -17,3 +21,4 @@ function changeColor() {
     containertag.appendChild(tag2);
     commentsection.appendChild(containertag);
 }
+    
