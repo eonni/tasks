@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-family: monospace;
+}
+
+input[id="color"] {
+    width: 70px;
+}
+
+input[name="element"] {
+    margin: 10px;
+}
+
+fieldset {
+    border: none;
+    margin: 10px auto;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+textarea[id="inserttext"] {
+    margin: 10px auto;
+    display: block;
+}
+
+.todolist div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
