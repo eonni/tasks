@@ -2,11 +2,9 @@ const body = document.querySelector('body');
 const commentsection = document.querySelector('.todolist');
 
 function changeColor() {
-    event.preventDefault(); 
     const color = document.querySelector('input[name="color"]').value;
     const changebackground = document.querySelector('input[value="background"]');
     changebackground.checked ? body.style.backgroundColor = color : body.style.color = color;
-    
 }
 
 function addTask() {
@@ -21,4 +19,3 @@ function addTask() {
     containertag.appendChild(tag2);
     commentsection.appendChild(containertag);
 }
-    

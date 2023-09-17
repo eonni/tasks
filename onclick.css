@@ -7,6 +7,7 @@ body {
 
 input[id="color"] {
     width: 70px;
+    margin-bottom: 10px;
 }
 
 input[name="element"] {
@@ -15,7 +16,7 @@ input[name="element"] {
 
 fieldset {
     border: none;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 button {
@@ -43,4 +44,8 @@ textarea[id="inserttext"] {
     width: 70%;
     word-wrap: break-word;
     text-align: left;
+}
+
+.confirm {
+    margin-bottom: 10px;
 }
