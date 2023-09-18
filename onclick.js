@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-const todolist = document.querySelector('.todolist');
+
 
 function changeColor() {
     const colorinput = document.querySelector('input[name="color"]').value;
@@ -8,20 +8,33 @@ function changeColor() {
 }
 
 function addTask() {
-    const todochild= document.createElement("div");
+    const todolist = document.querySelector('.todolist');
+    const todochild = document.createElement("div");
+
+    const selectElement = document.createElement("select");
+    const optionValues = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "black", "white"];
+    for (let i = 0; i < selectOptions.length; i++) {
+        const optionElement = document.todolist.createElement("option");
+        const optionValue = optionValues[i];
+        optionElement.value = optionValue;
+        optionElement.textContent = optionValue;
+        selectElement.appendChild(optionElement);
+    }
 
     const tag1 = document.createElement("p");
+    const tasktext = document.querySelector('textarea[name="comment"]').value;
+    const task = document.createTextNode(tasktext);
+    tag1.appendChild(task);
+    
     const tag2 = document.createElement("input");
     tag2.setAttribute("type", "checkbox");
     tag2.setAttribute("name", "todo");
 
-    const tasktext = document.querySelector('textarea[name="comment"]').value;
-    const task = document.createTextNode(tasktext);
-    tag1.appendChild(task);
-
+    todochild.appendChild(selectElement);
     todochild.appendChild(tag1);
     todochild.appendChild(tag2);
-    todolist.appendChild(todochild); 
+    todolist.appendChild(todochild);
+    
 }
 
 function deleteTask() {
