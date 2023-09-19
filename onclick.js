@@ -10,11 +10,13 @@ function changeColor() {
 function addTask() {
     const todochild= document.createElement("div");
     const selectElement = document.createElement("select");
-    const optionValues = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "black", "white"];
+    selectElement.onclick = function() {changeTaskColor()};
+    selectElement.setAttribute("id", "colorSelector");
+    const optionValues = ["", "red", "orange", "yellow", "green", "blue", "purple", "pink", "black", "white"];
     for (let i = 0; i < optionValues.length; i++) {
         const optionValue = optionValues[i];
         const optionElement = document.createElement("option");
-        optionElement.setAttribute("class", optionValue);
+        optionElement.setAttribute("id", "option");
         optionElement.value = optionValue;
         optionElement.textContent = optionValue;
         selectElement.appendChild(optionElement);
@@ -33,6 +35,17 @@ function addTask() {
     todochild.appendChild(tag1);
     todochild.appendChild(tag2);
     todolist.appendChild(todochild);
+}
+
+function changeTaskColor() {
+    const todochildren = todolist.querySelectorAll("div");
+    const selectElements = todolist.querySelectorAll("select");
+    for (let i = 0; i < todochildren.length; i++) {
+        const selectElement = selectElements[i];
+        const selectElementColorValue = selectElement.value;
+        const todochild = todochildren[i];
+        todochild.style.backgroundColor = selectElementColorValue;
+    }
 }
 
 function deleteTask() {
