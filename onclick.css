@@ -37,13 +37,17 @@ textarea[id="inserttext"] {
     align-items: center;
     gap: 10px;
     margin: 0 auto;
-    width: 200px;
+    width: 300px;
 }
 
 .todolist div p{
-    width: 70%;
+    width: 60%;
     word-wrap: break-word;
     text-align: left;
+}
+
+.todolist div select {
+    width: 20px;
 }
 
 .confirm {
