@@ -10,9 +10,9 @@ function changeColor() {
 function addTask() {
     const todochild= document.createElement("div");
     const selectElement = document.createElement("select");
-    selectElement.onclick = function() {changeTaskColor()};
+    selectElement.onclick = function() {changeTaskColor()}; // how to add onclick attribute js!
     selectElement.setAttribute("id", "colorSelector");
-    const optionValues = ["", "red", "orange", "yellow", "green", "blue", "purple", "pink", "black", "white"];
+    const optionValues = ["select a color", "red", "orange", "yellow", "green", "blue", "purple", "pink", "black", "white"];
     for (let i = 0; i < optionValues.length; i++) {
         const optionValue = optionValues[i];
         const optionElement = document.createElement("option");
