@@ -53,3 +53,7 @@ textarea[id="inserttext"] {
 .confirm {
     margin-bottom: 10px;
 }
+
+.delete {
+    margin: 10px auto;
+}
